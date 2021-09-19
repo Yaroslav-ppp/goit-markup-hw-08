@@ -1,0 +1,25 @@
+.header {
+//    position: relative;
+    box-sizing: border-box;
+    border-bottom: 1px solid #ececec;
+    background-color: $white-color;
+    color: $secondary-text;
+    @media screen and (min-width: 768px) {
+    padding: 15.5px 0 15.5px 0;
+    }
+    @media screen and (min-width: 1200px) {
+        padding: 0;     
+    }
+    &__flex {
+@media screen and (min-width: 768px) {
+        display: flex;
+        justify-content: space-between;
+}
+          }
+  }
+  .nav {
+    @media screen and (min-width: 768px) {
+    display: flex;
+    align-items: center;
+    }
+   }

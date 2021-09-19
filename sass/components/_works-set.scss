@@ -1,0 +1,110 @@
+.works-set {
+ 
+
+
+
+  @media screen and (min-width: 1200px) {
+    margin-top: -15px;
+    margin-left: -15px;
+    width: 1200px;
+    display: flex;
+    flex-wrap: wrap;
+  }
+    @media screen and (min-width: 768px) {
+      margin-top: -15px;
+      margin-left: -15px;
+      display: flex;
+      flex-wrap: wrap;
+      min-width: 768px;
+     
+    }
+   
+      &__picture {
+        position: relative;
+        overflow: hidden;
+      }
+      &__overlay {
+        left: 0;
+        top: 0;
+        display: inline-block;
+        @media screen and (min-width: 1200px) {
+        padding: 63px 24px;
+        }
+        position: absolute;
+        content: "";
+        width: 100%;
+        height: 100%;
+        background: rgba(33, 150, 243, 0.9);
+        font-size: 18px;
+        line-height: 1.56;
+        letter-spacing: 0.03em;
+        color: $white-color;
+        transform: translateY(100%);
+        transition: transform $timing-function;
+        .works-set__link:hover &, .works-set__link:focus & {
+            transform: translatey(0);
+        }
+      }
+      
+         }
+         .works-set__link {
+            text-decoration: none;
+            display: block;
+            &:hover, &:focus {
+                box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+              1px 4px 6px rgba(0, 0, 0, 0.16);
+            }
+            }
+  .works-set__text {
+    @media screen and (min-width: 768px) {
+      padding: 20px 24px;
+      width: 354px;
+    }
+    width: 370px;
+    @media screen and (min-width: 768px) {
+      width: 370px;
+    }
+    background: $white-color;
+    border: 1px solid #eeeeee;
+    box-sizing: border-box;
+    .works-set__title {
+      @media screen and (min-width: 768px) {
+        margin-bottom: 4px;
+      }
+        
+        font-size: 18px;
+        font-weight: 700;
+        line-height: 2;
+        letter-spacing: 0.06em;
+        color: $secondary-text;
+      }
+      .works-set__description {
+        font-size: 16px;
+        line-height: 1.88;
+        letter-spacing: 0.03em;
+        color: $main-text;
+      }
+  }
+  
+  .works-set > .works-set__item {
+    position: relative;
+    background: $white-color;
+    margin: 15px;
+    @media screen and (min-width: 1200px) {
+      &:nth-child(n+7) {
+        margin-bottom: 0;
+      }
+    width: 370px;
+    flex-basis: calc(100% / 3 - 30px);
+    }
+    box-sizing: border-box;
+    @media screen and (min-width: 768px) {
+    flex-basis: calc(100vw-30px)/2;
+   
+    }
+  }
+  @media screen and (min-width: 768px) {
+  .works-set__item:last-child {
+    margin-bottom: 0;
+   }
+  }

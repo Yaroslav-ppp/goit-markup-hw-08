@@ -1,0 +1,43 @@
+.section {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  // прибираєм верхній падінг в секції we-doing
+  &:nth-child(3) {
+    padding-top: 0;
+  }
+@media  screen and (min-width: 1200px) {
+
+padding-top: 94px;
+padding-bottom: 94px;
+}
+  
+
+    background: $white-color;
+    &__title {
+
+      text-align: center;
+
+      @media  screen and (min-width: 768px) {
+        text-align: left;
+      }
+      @media  screen and (min-width: 1200px) {
+        margin-top: 0;
+      }
+        margin-bottom: 10px;
+        text-transform: uppercase;
+        font-size: 14px;
+        font-weight: 700;
+        line-height: 1.14;
+        letter-spacing: 0.03em;
+        color: $secondary-text;
+      }
+      &__text {
+        text-align: left;
+        font-size: 14px;
+        line-height: 1.71;
+        letter-spacing: 0.03em;
+        color: $main-text;
+     
+      }
+  }
+  

@@ -1,0 +1,269 @@
+.footer {
+    padding-top: 60px;
+    padding-bottom: 60px;
+    background-color: $dark-background;
+   
+    &__bloks {
+
+        display: flex;
+        @media screen and (max-width: 1199px) {
+        flex-direction: column;
+        }
+        @media screen and (min-width: 768px) and (max-width: 1199px) {
+          padding-right: 76px;
+          padding-left: 89px;
+        }
+        @media screen and (min-width: 1200px) {
+        flex-direction: row;
+        vertical-align: baseline;
+
+        }
+      }
+      &__join-us {
+        display: flex;
+        flex-direction: column;
+        @media screen and (min-width: 1200px) {
+        margin-left: 70px;
+        margin-right: 93px;
+        }
+      }
+        }
+  
+  .footer__title {
+    @media screen and (min-width: 768px) {
+      text-align: center;
+      margin-top: 5px;
+    }
+    margin-top: 60px;
+    @media screen and (min-width: 1200px) {
+    margin-top: 3;
+    padding-top: 12px;
+    }
+    margin-bottom: 20px;
+    color: $white-color;
+  }
+ 
+
+
+  .footer__column {
+    display: flex;
+    flex-direction: column;
+    @media screen and (max-width: 1199px) {
+    align-items: center;
+    }
+ 
+ 
+
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
+      margin-bottom: 30px;
+    }
+    @media screen and (min-width: 1200px) {
+      padding-right: 7px;
+      }
+          }
+    .footer__label {
+        display: flex;
+        @media screen and (min-width: 1200px) {
+        align-items: flex-start;
+        }
+      
+
+
+      }
+      .footer__office-address {
+        display: inline-block;
+        color: $white-color;
+        font-size: 14px;
+        font-weight: 400;
+        font-style: normal;
+        line-height: 1.71;
+        letter-spacing: 0.03em;
+        margin-bottom: 8px;
+        @media screen and (min-width: 1200px) {
+        margin-bottom: 9px; 
+        }
+      }
+    
+      .footer__contact-link {
+        margin-bottom: 8px;
+        font-size: 14px;
+        font-weight: 400;
+        font-style: normal;
+        line-height: 1.71;
+        letter-spacing: 0.03em;
+        color: $links-footer;
+        text-decoration: none;
+        transition: color $timing-function, 
+        fill $timing-function;
+        @media screen and (min-width: 1200px) {
+        margin-bottom: 9px;
+        }
+        
+        
+
+
+
+
+      }
+      .footer__contact-link:last-of-type {
+        margin-bottom: 0;
+      }
+      .footer__contact-link:hover,  .footer__contact-link:focus {
+        color: $accent-color;
+        fill: $accent-color; 
+    }
+      .footer__email {
+      display: flex;
+    @media screen and (max-width: 1199px) {
+      flex-direction: column;
+      align-items: center;
+    }
+    }
+  
+.footer__subscribe {
+   
+    @media screen and (min-width: 1200px) {
+    display: flex;
+    flex-direction: column;
+    margin-right: auto;
+    }
+
+    .footer__title-subscribe {
+      @media screen and (min-width: 768px) {
+        margin-top: 0;
+        margin-right: auto;
+      }
+    }
+    @media screen and (min-width: 1200px) {
+    .footer__email {
+        display: flex;
+        
+      }
+    }
+      .footer__input {
+         width: calc(100vw - 30px);
+         @media screen and (min-width: 768px) {
+           width: 450px;
+         }
+         margin-bottom: 20px;
+         @media screen and (min-width: 1200px) {
+        margin-right: 12px;
+        padding: 0 0 0 16px;
+        width: 358px;
+        display: flex;
+        align-items: center;
+
+         }
+        height: 50px;
+        background: $dark-background;
+        border: 1px solid rgba(255, 255, 255, 0.3);
+        box-sizing: border-box;
+        filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+        border-radius: 4px;
+          /* text */
+        font-size: 16px;
+        line-height: 1.25;
+        letter-spacing: 0.03em;
+        color: $links-footer;
+
+      }
+  }
+  .footer__tablet-row {
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+   
+      display: flex;
+      justify-content: space-between;
+    }
+    @media screen and (min-width: 1200px) {
+      display: flex;
+  }
+}
+ 
+
+
+
+
+
+//   .footer {
+//     padding-top: 60px;
+//     padding-bottom: 60px;
+//     background-color: $dark-background;
+    
+//     &__bloks {
+//         display: flex;
+//       }
+//       &__join-us {
+//         display: flex;
+//         flex-direction: column;
+//         margin-left: 70px;
+//         margin-right: 93px;
+//       }
+//         }
+//   .footer__bloks {
+//     display: flex;
+//   }
+//   .footer__title {
+//     padding-top: 12px;
+//     margin-bottom: 20px;
+//     color: $white-color;
+//   }
+//   .footer__column {
+//     display: flex;
+//     flex-direction: column;
+//     .footer__label {
+//         display: flex;
+//         align-items: flex-start;
+//       }
+//       .footer__office-address {
+//         color: $white-color;
+//         font-size: 14px;
+//         font-weight: 400;
+//         line-height: 1.71;
+//         letter-spacing: 0.03em;
+//         font-style: normal;
+//       }
+//       .footer__contact-link {
+//         margin-top: 9px;
+//         font-size: 14px;
+//         font-weight: 400;
+//         line-height: 1.71;
+//         letter-spacing: 0.03em;
+//         color: $links-footer;
+//         text-decoration: none;
+//         font-style: normal;
+//         transition: color $timing-function, 
+//         fill $timing-function;
+        
+//       }
+//       .footer__contact-link:hover,  .footer__contact-link:focus {
+//         color: $accent-color;
+//         fill: $accent-color; 
+//     }
+//   }
+  
+  
+// .footer__subscribe {
+//     display: flex;
+//     flex-direction: column;
+//     .footer__email {
+//         display: flex;
+//       }
+//       .footer__input {
+//         margin-right: 12px;
+//         padding: 0 0 0 16px;
+//         width: 358px;
+//         height: 50px;
+//         background: $dark-background;
+//         border: 1px solid rgba(255, 255, 255, 0.3);
+//         box-sizing: border-box;
+//         filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+//         border-radius: 4px;
+//           /* text */
+//         font-size: 16px;
+//         line-height: 1.25;
+//         display: flex;
+//         align-items: center;
+//         letter-spacing: 0.03em;
+//         color: $links-footer;
+//       }
+//   }
