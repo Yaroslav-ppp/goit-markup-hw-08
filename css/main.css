@@ -1522,7 +1522,7 @@ img {
   top: 50%;
   left: 50%;
   height: 609px;
-  width: 450px;
+  max-width: 450px;
   /* hidden-checkbox */
   /* our-checkbox */
 }
