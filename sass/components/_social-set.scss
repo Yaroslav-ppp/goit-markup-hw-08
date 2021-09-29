@@ -1,37 +1,30 @@
 .social-set {
-  
-    display: flex;
-    justify-content: center;
-    
-      &__link {
-        
-        display: block;
-        text-decoration: none;
-        margin-right: 10px;
-        fill: $social-icon;
-        height: 44px;
-        width: 44px;
-        border-radius: 50%;
-        background: $white-color;
-        padding: 12px;
-        transition: fill $timing-function,
-        background-color $timing-function;
-       
-          }
-          
-           }
-          //  для мобільного прибрав через братів і сестер)
-           .social-set__link:last-child {
-            margin-right: 0;
-        }
-        
-      
-           .social-set__link:hover, .social-set__link:focus {
-            fill: $white-color;
-            background-color: $accent-color;
-        }
-     
-        .social-set__icon-rgb {
-          background: rgba(255, 255, 255, 0.1);
-          fill: $white-color;
-        }
+  display: flex;
+  justify-content: center;
+  &__link {
+    display: block;
+    text-decoration: none;
+    margin-right: 10px;
+    fill: $social-icon;
+    height: 44px;
+    width: 44px;
+    border-radius: 50%;
+    background: $white-color;
+    padding: 12px;
+    transition: fill $timing-function, background-color $timing-function;
+  }
+}
+//  для мобільного прибрав через братів і сестер)
+.social-set__link:last-child {
+  margin-right: 0;
+}
+.social-set__link:hover,
+.social-set__link:focus {
+  fill: $white-color;
+  background-color: $accent-color;
+}
+
+.social-set__icon-rgb {
+  background: rgba(255, 255, 255, 0.1);
+  fill: $white-color;
+}

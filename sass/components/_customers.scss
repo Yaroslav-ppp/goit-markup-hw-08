@@ -1,64 +1,56 @@
 .customers {
-
-    display: flex;
-    flex-wrap: wrap;
-    margin: -15px;
-    // margin-top: -15px;
-    // margin-left: -15px;
-    flex-basis: calc((100vw - 30px) / 2);
-    @media screen and (min-width: 1200px) {
+  display: flex;
+  flex-wrap: wrap;
+  margin: -15px;
+  flex-basis: calc((100vw - 30px) / 2);
+  @media screen and (min-width: 1200px) {
     margin-left: auto;
     margin-right: auto;
-    }
-    @media screen and (min-width: 768px) {
+  }
+  @media screen and (min-width: 768px) {
     flex-basis: calc((100vw - 90px) / 3);
-    }
-    @media screen and (max-width: 479px) {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-    }
-    // Для прибирання відступу нижніх марджинів у клієнтів
-    // margin-bottom: -15px;
-// 
-    &__link {
-        margin: 15px;
-        width: 210px;
-        height: 92px;
-        padding: 16px 52px;
-        text-decoration: none;
-        fill: $social-icon;
-        
+  }
+  @media screen and (max-width: 479px) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
 
+  &__link {
+    margin: 15px;
+    width: 210px;
+    height: 92px;
+    padding: 16px 52px;
+    text-decoration: none;
+    fill: $social-icon;
+    background: $white-color;
+    border: 1px solid $social-icon;
+    box-sizing: border-box;
+    border-radius: 4px;
+    transition: border $timing-function, fill $timing-function;
+    &:hover,
+    &:focus {
+      border: 1px solid $accent-color;
+      fill: $accent-color;
+    }
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
+      width: 226px;
+      margin: 15px;
+      padding: 16px 60px;
+    }
 
-      @media screen and (min-width: 768px) and (max-width: 1199px) {
-       
-        width: 226px;
-        margin: 15px;
-        padding: 16px 60px;
-      }
-        
-        @media screen and (min-width: 1200px) {
-     
-        width: 170px;
-        height: 92px;
-        padding: 16px 32px;
-        // зверху і знизу марджини дав тому що без них падінги на іконки налазили
-        margin: 15px 30px 15px 0;
-        }
-        background: $white-color;
-        border: 1px solid $social-icon;
-        box-sizing: border-box;
-        border-radius: 4px;
-        transition: border $timing-function, fill $timing-function;
-        &:hover, &:focus {
-            border: 1px solid $accent-color;
-            fill: $accent-color;
-        }
-        @media screen and (min-width: 1200px) {
-        &:last-child {
+    @media screen and (min-width: 1200px) {
+      width: 170px;
+      height: 92px;
+      padding: 16px 32px;
+      // зверху і знизу марджини дав тому що без них падінги на іконки налазили
+      margin: 15px 30px 15px 0;
+    }
+
+    @media screen and (min-width: 1200px) {
+      &:last-child {
         margin-right: 0;
-        }
-        }
       }
     }
+  }
+}

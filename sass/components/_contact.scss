@@ -3,35 +3,32 @@
     display: none;
   }
   @media screen and (min-width: 1200px) {
-  display: flex;
-  margin-left: auto;
+    display: flex;
+    margin-left: auto;
   }
-   padding-left: 0;
+  padding-left: 0;
   @media screen and (min-width: 768px) {
-  &__icon {
-    margin-right: 10px;
-  }
+    &__icon {
+      margin-right: 10px;
+    }
   }
 
   .contact__item {
-    @media screen and (min-width: 768px) {    
-     &:not(:last-child) {margin-bottom: 10px;} 
+    &:hover,
+    &:focus {
+      color: $accent-color;
+      fill: $accent-color;
+    }
+    @media screen and (min-width: 768px) {
+      &:not(:last-child) {
+        margin-bottom: 10px;
+      }
     }
     @media screen and (min-width: 1200px) {
-    margin-right: 50px;
-    margin-bottom: 0;
+      margin-right: 50px;
+      margin-bottom: 0;
     }
     .contact__link {
-      @media screen and (min-width: 767px) {
-        margin-bottom: 10px;
-        &:last-child {
-          margin-bottom: 0;
-        }
-        @media screen and (min-width: 1200px) {
-          margin-bottom: 0;
-        }
-              }
-
       display: inline-block;
       font-weight: 500;
       font-size: 14px;
@@ -43,20 +40,24 @@
       fill: $main-text;
       color: $main-text;
       transition: color $timing-function, fill $timing-function;
-      @media screen and (min-width: 1200px) {
-      display: flex;
-      align-items: center;
-      padding-top: 31px;
-      padding-bottom: 23px;
+      @media screen and (min-width: 767px) {
+        margin-bottom: 10px;
+        &:last-child {
+          margin-bottom: 0;
+        }
+
+        @media screen and (min-width: 1200px) {
+          margin-bottom: 0;
+        }
       }
-      &:hover,
-      &:focus {
-        color: $accent-color;
-        fill: $accent-color;
+
+      @media screen and (min-width: 1200px) {
+        display: flex;
+        align-items: center;
+        padding-top: 31px;
+        padding-bottom: 23px;
       }
     }
-
-    
   }
 }
 .contact__item:last-child {

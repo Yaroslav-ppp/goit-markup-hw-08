@@ -16,10 +16,15 @@
     />
     <title>Document</title>
     <!-- hover and focus modal-start -->
-    <style>.modal__input-box:hover .modal__label{color:#2196F3}
-    .modal__input-box:focus-within .modal__label{color:#2196F3}
-        </style>
-        <!-- end -->
+    <style>
+      .modal__input-box:hover .modal__label {
+        color: #2196f3;
+      }
+      .modal__input-box:focus-within .modal__label {
+        color: #2196f3;
+      }
+    </style>
+    <!-- end -->
     <link rel="stylesheet" href="./css/main.min.css" />
   </head>
   <body>
@@ -30,95 +35,83 @@
           <a href="#" class="logo"
             >Web<span class="logo__header">Studio</span>
           </a>
-         <!-- mobile menu -->
-            <button
-              type="button"
-              class="menu__button js-open-menu"
-              aria-expanded="false"
-              aria-controls="mobile-menu"
+          <!-- mobile menu -->
+          <button
+            type="button"
+            class="menu__button js-open-menu"
+            aria-expanded="false"
+            aria-controls="mobile-menu"
+          >
+            <svg
+              width="40"
+              height="40"
+              aria-label="переключатель мобильного меню"
             >
-              <svg
-                width="40"
-                height="40"
-                aria-label="переключатель мобильного меню"
-              >
-                <use
-            
-                  href="./images/icons.svg#icon-menu"
-                ></use>
-              </svg>
-            </button>
-           
-            <div class="menu js-menu-container container" id="mobile-menu">
-              
+              <use href="./images/icons.svg#icon-menu"></use>
+            </svg>
+          </button>
+          <div class="menu js-menu-container container" id="mobile-menu">
             <button type="button" class="menu__button js-close-menu">
               <svg
                 width="40"
                 height="40"
                 aria-label="переключатель мобильного меню"
               >
-                <use
-               
-                  href="./images/icons.svg#icon-close"
-                ></use>
+                <use href="./images/icons.svg#icon-close"></use>
               </svg>
             </button>
-               <ul class="menu__site-nav">
+            <ul class="menu__site-nav">
               <li class="list menu-site-nav__item">
-                <a href="./index.html" class="menu-site-nav__link menu-site-nav__carrent"
+                <a
+                  href="./index.html"
+                  class="menu-site-nav__link menu-site-nav__carrent"
                   >Студия</a
                 >
               </li>
               <li class="list menu-site-nav__item">
-                <a href="./portfolio.html" class="menu-site-nav__link">Портфолио</a>
+                <a href="./portfolio.html" class="menu-site-nav__link"
+                  >Портфолио</a
+                >
               </li>
               <li class="list menu-site-nav__item">
                 <a href="#" class="menu-site-nav__link">Контакты</a>
               </li>
             </ul>
-       
-          <div class="menu__contacts">
-            <ul class="">
-              <li class="list menu-contact-tel__item">
-                <a href="tel:+380961111111" class="menu-contact-tel__link">
-                  
-                  +38 096 111 11 11
-                </a>
-              </li>
-              <li class="list menu-contact-mail__item">
-                <a href="mailto:info@devstudio.com" class="menu-contact-mail__link">
-                  
-                  info@devstudio.com
-                </a>
-              </li>
-             
-            </ul>
-          
-            <ul class="menu-social">
-              <li class="list">
-                <a href="" class="menu-social__link">
-                  Instagram
-                </a>
-              </li>
-              <li class="list">
-                <a href="" class="menu-social__link">
-                  Twitter
-                </a>
-              </li>
-              <li class="list">
-                <a href="" class="menu-social__link">
-                  Facebook
-                </a>
-              </li>
-              <li class="list">
-                <a href="" class="menu-social__link menu-social__Linkedin">
-                  LinkedIn
-                </a>
-              </li>
-            </ul>
+            <div class="menu__contacts">
+              <ul class="">
+                <li class="list menu-contact-tel__item">
+                  <a href="tel:+380961111111" class="menu-contact-tel__link">
+                    +38 096 111 11 11
+                  </a>
+                </li>
+                <li class="list menu-contact-mail__item">
+                  <a
+                    href="mailto:info@devstudio.com"
+                    class="menu-contact-mail__link"
+                  >
+                    info@devstudio.com
+                  </a>
+                </li>
+              </ul>
+              <ul class="menu-social">
+                <li class="list">
+                  <a href="" class="menu-social__link"> Instagram </a>
+                </li>
+                <li class="list">
+                  <a href="" class="menu-social__link"> Twitter </a>
+                </li>
+                <li class="list">
+                  <a href="" class="menu-social__link"> Facebook </a>
+                </li>
+                <li class="list">
+                  <a href="" class="menu-social__link menu-social__Linkedin">
+                    LinkedIn
+                  </a>
+                </li>
+              </ul>
+            </div>
           </div>
-        </div>
-                                  <ul class="site-nav">
+          <ul class="site-nav">
             <li class="list site-nav__item">
               <a href="./index.html" class="site-nav__link site-nav__carrent"
                 >Студия</a
@@ -150,10 +143,6 @@
             </a>
           </li>
         </ul>
-
-
-
-
       </div>
     </header>
 
@@ -236,8 +225,8 @@
       </section>
 
       <!-- what we are doing -->
-     
-      <section class="section  we-doing">
+
+      <section class="section we-doing">
         <div class="container">
           <h2 class="container__title">Чем мы занимаемся</h2>
           <ul class="list we-doing">
@@ -290,20 +279,19 @@
           <ul class="list staff-card-set">
             <li class="staff-card-set__item">
               <article class="staff-card">
-               
                 <img
-                alt="фото-Игоря-Демьяненка"
-                src="./images/images_adaptive/igor_demianenko_desk.jpg"
-                srcset="
-                ./images/images_adaptive/igor_demianenko_desk.jpg 270w,
-                ./images/images_adaptive/igor_demianenko_tabl.jpg 354w,
-                ./images/images_adaptive/igor_demianenko_mob.jpg 450w,
-                ./images/images_adaptive/igor_demianenko_desk@2x.jpg 540w,
-                ./images/images_adaptive/igor_demianenko_tabl@2x.jpg 708w,
-                ./images/images_adaptive/igor_demianenko_mob@2x.jpg 900w,
-                "
-                sizes="(min-width: 1200px) 270px, (min-width: 768px) 354px, (max-width: 480px) 450px, 100vw"
-              />
+                  alt="фото-Игоря-Демьяненка"
+                  src="./images/images_adaptive/igor_demianenko_desk.jpg"
+                  srcset="
+                    ./images/images_adaptive/igor_demianenko_desk.jpg    270w,
+                    ./images/images_adaptive/igor_demianenko_tabl.jpg    354w,
+                    ./images/images_adaptive/igor_demianenko_mob.jpg     450w,
+                    ./images/images_adaptive/igor_demianenko_desk@2x.jpg 540w,
+                    ./images/images_adaptive/igor_demianenko_tabl@2x.jpg 708w,
+                    ./images/images_adaptive/igor_demianenko_mob@2x.jpg  900w
+                  "
+                  sizes="(min-width: 1200px) 270px, (min-width: 768px) 354px, (max-width: 480px) 450px, 100vw"
+                />
 
                 <div class="staff-card__content">
                   <h3 class="staff-card__name">Игорь Демьяненко</h3>
@@ -338,21 +326,20 @@
             </li>
             <li class="staff-card-set__item">
               <article class="staff-card">
-
                 <img
-                alt="фото-Ольги-Репиной"
-                src="./images/images_adaptive/olga_repina_desk.jpg"
-                srcset="
-                ./images/images_adaptive/olga_repina_desk.jpg 270w,
-                ./images/images_adaptive/olga_repina_tabl.jpg 354w,
-                ./images/images_adaptive/olga_repina_mob.jpg 450w,
-                ./images/images_adaptive/olga_repina_desk@2x.jpg 540w,
-                ./images/images_adaptive/olga_repina_tabl@2x.jpg 708w,
-                ./images/images_adaptive/olga_repina_mob@2x.jpg 900w,
-                "
-                sizes="(min-width: 1200px) 270px, (min-width: 768px) 354px, (max-width: 480px) 450px, 100vw"
-              />
-                
+                  alt="фото-Ольги-Репиной"
+                  src="./images/images_adaptive/olga_repina_desk.jpg"
+                  srcset="
+                    ./images/images_adaptive/olga_repina_desk.jpg    270w,
+                    ./images/images_adaptive/olga_repina_tabl.jpg    354w,
+                    ./images/images_adaptive/olga_repina_mob.jpg     450w,
+                    ./images/images_adaptive/olga_repina_desk@2x.jpg 540w,
+                    ./images/images_adaptive/olga_repina_tabl@2x.jpg 708w,
+                    ./images/images_adaptive/olga_repina_mob@2x.jpg  900w
+                  "
+                  sizes="(min-width: 1200px) 270px, (min-width: 768px) 354px, (max-width: 480px) 450px, 100vw"
+                />
+
                 <div class="staff-card__content">
                   <h3 class="staff-card__name">Ольга Репина</h3>
                   <p class="staff-card__proffesion">Frontend Developer</p>
@@ -383,21 +370,20 @@
             </li>
             <li class="staff-card-set__item">
               <article class="staff-card">
-
                 <img
-                alt="фото-Николая-Тарасова"
-                src="./images/images_adaptive/nikolai_tarasov_desk.jpg"
-                srcset="
-                ./images/images_adaptive/nikolai_tarasov_desk.jpg 270w,
-                ./images/images_adaptive/nikolai_tarasov_tabl.jpg 354w,
-                ./images/images_adaptive/nikolai_tarasov_mob.jpg 450w,
-                ./images/images_adaptive/nikolai_tarasov_desk@2x.jpg 540w,
-                ./images/images_adaptive/nikolai_tarasov_tabl@2x.jpg 708w,
-                ./images/images_adaptive/nikolai_tarasov_mob@2x.jpg 900w,
-                "
-                sizes="(min-width: 1200px) 270px, (min-width: 768px) 354px, (max-width: 480px) 450px, 100vw"
-              />
-            
+                  alt="фото-Николая-Тарасова"
+                  src="./images/images_adaptive/nikolai_tarasov_desk.jpg"
+                  srcset="
+                    ./images/images_adaptive/nikolai_tarasov_desk.jpg    270w,
+                    ./images/images_adaptive/nikolai_tarasov_tabl.jpg    354w,
+                    ./images/images_adaptive/nikolai_tarasov_mob.jpg     450w,
+                    ./images/images_adaptive/nikolai_tarasov_desk@2x.jpg 540w,
+                    ./images/images_adaptive/nikolai_tarasov_tabl@2x.jpg 708w,
+                    ./images/images_adaptive/nikolai_tarasov_mob@2x.jpg  900w
+                  "
+                  sizes="(min-width: 1200px) 270px, (min-width: 768px) 354px, (max-width: 480px) 450px, 100vw"
+                />
+
                 <div class="staff-card__content">
                   <h3 class="staff-card__name">Николай Тарасов</h3>
                   <p class="staff-card__proffesion">Marketing</p>
@@ -428,20 +414,19 @@
             </li>
             <li class="staff-card-set__item">
               <article class="staff-card">
-
                 <img
-                alt="фото-Михаила-Ермакова"
-                src="./images/images_adaptive/mikhail_ermakov_desk.jpg"
-                srcset="
-                ./images/images_adaptive/mikhail_ermakov_desk.jpg 270w,
-                ./images/images_adaptive/mikhail_ermakov_tabl.jpg 354w,
-                ./images/images_adaptive/mikhail_ermakov_mob.jpg 450w,
-                ./images/images_adaptive/mikhail_ermakov_desk@2x.jpg 540w,
-                ./images/images_adaptive/mikhail_ermakov_tabl@2x.jpg 708w,
-                ./images/images_adaptive/mikhail_ermakov_mob@2x.jpg 900w,
-                "
-                sizes="(min-width: 1200px) 270px, (min-width: 768px) 354px, (max-width: 480px) 450px, 100vw"
-              />
+                  alt="фото-Михаила-Ермакова"
+                  src="./images/images_adaptive/mikhail_ermakov_desk.jpg"
+                  srcset="
+                    ./images/images_adaptive/mikhail_ermakov_desk.jpg    270w,
+                    ./images/images_adaptive/mikhail_ermakov_tabl.jpg    354w,
+                    ./images/images_adaptive/mikhail_ermakov_mob.jpg     450w,
+                    ./images/images_adaptive/mikhail_ermakov_desk@2x.jpg 540w,
+                    ./images/images_adaptive/mikhail_ermakov_tabl@2x.jpg 708w,
+                    ./images/images_adaptive/mikhail_ermakov_mob@2x.jpg  900w
+                  "
+                  sizes="(min-width: 1200px) 270px, (min-width: 768px) 354px, (max-width: 480px) 450px, 100vw"
+                />
 
                 <div class="staff-card__content">
                   <h3 class="staff-card__name">Михаил Ермаков</h3>
@@ -523,53 +508,55 @@
     <footer class="footer">
       <div class="container footer__bloks">
         <div class="footer__tablet-row">
-        <div class="footer__column">
-          <a href="" class="logo-footer">
-            Web<span class="logo-footer__light-part">Studio</span></a
-          >
-          <address class="footer__column">
-            <p class="footer__office-address">
-            г. Киев, пр-т Леси Украинки, 26
-            </p>
-            <a href="mailto:info@example.com" class="footer__contact-link"
-              >info@example.com</a
+          <div class="footer__column">
+            <a href="" class="logo-footer">
+              Web<span class="logo-footer__light-part">Studio</span></a
             >
-            <a href="tel:+380991111111" class="footer__contact-link"
-              >+38 099 111 11 11</a
-            >
-          </address>
-        </div>
+            <address class="footer__column">
+              <p class="footer__office-address">
+                г. Киев, пр-т Леси Украинки, 26
+              </p>
+              <a href="mailto:info@example.com" class="footer__contact-link"
+                >info@example.com</a
+              >
+              <a href="tel:+380991111111" class="footer__contact-link"
+                >+38 099 111 11 11</a
+              >
+            </address>
+          </div>
 
-        <div class="footer__join-us">
-          <h3 class="section__title footer__title">присоединяйтесь</h3>
-          <div class="social-set">
-            <a href="#" class="social-set__link social-set__icon-rgb">
-              <svg width="20" height="20">
-                <use href="./images/icons.svg#icon-instagram"></use>
-              </svg>
-            </a>
-            <a href="#" class="social-set__link social-set__icon-rgb">
-              <svg width="20" height="20">
-                <use href="./images/icons.svg#icon-twitter"></use>
-              </svg>
-            </a>
-            <a href="#" class="social-set__link social-set__icon-rgb">
-              <svg width="20" height="20">
-                <use href="./images/icons.svg#icon-facebook"></use>
-              </svg>
-            </a>
-            <a href="#" class="social-set__link social-set__icon-rgb">
-              <svg width="20" height="20">
-                <use href="./images/icons.svg#icon-linkedin"></use>
-              </svg>
-            </a>
+          <div class="footer__join-us">
+            <h3 class="section__title footer__title">присоединяйтесь</h3>
+            <div class="social-set">
+              <a href="#" class="social-set__link social-set__icon-rgb">
+                <svg width="20" height="20">
+                  <use href="./images/icons.svg#icon-instagram"></use>
+                </svg>
+              </a>
+              <a href="#" class="social-set__link social-set__icon-rgb">
+                <svg width="20" height="20">
+                  <use href="./images/icons.svg#icon-twitter"></use>
+                </svg>
+              </a>
+              <a href="#" class="social-set__link social-set__icon-rgb">
+                <svg width="20" height="20">
+                  <use href="./images/icons.svg#icon-facebook"></use>
+                </svg>
+              </a>
+              <a href="#" class="social-set__link social-set__icon-rgb">
+                <svg width="20" height="20">
+                  <use href="./images/icons.svg#icon-linkedin"></use>
+                </svg>
+              </a>
+            </div>
           </div>
         </div>
-      </div>
         <!-- subscribe-footer-->
 
         <div class="footer__subscribe">
-          <h3 class="section__title footer__title footer__title-subscribe">Подпишитесь на рассылку</h3>
+          <h3 class="section__title footer__title footer__title-subscribe">
+            Подпишитесь на рассылку
+          </h3>
           <div class="footer__email">
             <label class="footer__label">
               <input
@@ -603,22 +590,16 @@
         <form>
           <p class="modal__title">Оставьте свои данные, мы вам перезвоним</p>
 
-          
           <div class="modal__input-box">
-            
             <label class="modal__label" for="name">Имя</label>
-            <input class="modal__input" type="text" name="name" id="name"/>
+            <input class="modal__input" type="text" name="name" id="name" />
             <svg width="18" height="18" class="modal__icon">
               <use href="./images/icons.svg#icon-person-black"></use>
             </svg>
-            
-            
-            
-          
           </div>
           <div class="modal__input-box">
-          <label class="modal__label" for="tel">Телефон</label>
-          
+            <label class="modal__label" for="tel">Телефон</label>
+
             <input
               class="modal__input"
               type="tel"
@@ -630,22 +611,22 @@
             </svg>
           </div>
           <div class="modal__input-box">
-          <label class="modal__label" for="email">Почта</label>
-          
+            <label class="modal__label" for="email">Почта</label>
+
             <input class="modal__input" type="email" name="email" id="email" />
             <svg width="18" height="18" class="modal__icon">
               <use href="./images/icons.svg#icon-email-black"></use>
             </svg>
           </div>
           <div class="modal__input-box">
-          <label class="modal__label" for="comment">Комментарий</label>
-          <textarea
-            class="modal__input modal__comment"
-            name="comment"
-            id="comment"
-            rows="10"
-            placeholder="Введите текст"
-          ></textarea>
+            <label class="modal__label" for="comment">Комментарий</label>
+            <textarea
+              class="modal__input modal__comment"
+              name="comment"
+              id="comment"
+              rows="10"
+              placeholder="Введите текст"
+            ></textarea>
           </div>
           <label class="modal__checkbox-form">
             <input
@@ -658,17 +639,14 @@
                 <use href="./images/icons.svg#icon-check-on"></use>
               </svg>
             </span>
-            <span>Соглашаюсь с рассылкой и принимаю</span> 
-          
+            <span>Соглашаюсь с рассылкой и принимаю</span>
+
             <a href="" class="modal__link-contract">Условия договора</a>
           </label>
           <button type="submit" class="button">Отправить</button>
         </form>
       </div>
     </div>
-   
-
-   
 
     <!-- connection js -->
     <script src="./js/modal.js"></script>
