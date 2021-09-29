@@ -1,44 +1,65 @@
 .section-hero {
     padding-top: 118px;
-    padding-bottom: 198px;
+    padding-bottom: 118px;
     height: 400px;
+    margin-left: auto;
+    margin-right: auto;
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    background-color: $dark-background;
+    background-repeat: no-repeat;
+    color: $white-color;
  @media screen and (min-width: 1200px) {
     
     padding-top: 200px;
     padding-bottom: 200px;
     height: 600px;
+    max-width: 1600px;
         }
-    
-    text-align: center;
-    background-image: radial-gradient(
-        ellipse at center,
-        rgba(47, 48, 58, 0.5),
-        rgba(115, 115, 117, 0.1)
-      ),
-      url(../images/background-pic.jpg);
-    background-color: $dark-background;
-    background-repeat: no-repeat;
-    color: $white-color;
-    
-//     @media screen and (min-width: 480px) {
-  
-//       // width: 480px; 
-     
-//      }
-//      @media screen and (min-width: 768px) {
-    
-//       // width: 768px; 
+        
+    background-image: $background-hero,
+      url(../images/images_adaptive/header_img_mob.jpg);
+
+      @media screen and (min-device-pixel-ratio: 2),
+      screen and (min-resolution: 192dpi),
+      screen and (min-resolution: 2dppx) {
+        & { 
+          background-image: $background-hero, url(../images/images_adaptive/header_img_mob_ret.jpg);
+        } 
+      }
  
-//      }
-//      @media screen and (min-width: 1200px) {
+     @media screen and (min-width: 481px) and (max-width: 768px) {
     
-//       // width: 1600px; 
-  
-//     }
-    margin-left: auto;
-    margin-right: auto;
-    background-size: cover;
-    background-position: center;
+      background-image:
+        $background-hero,
+      url(../images/images_adaptive/header_img_tabl.jpg);
+
+      @media screen and (min-device-pixel-ratio: 2),
+      screen and (min-resolution: 192dpi),
+      screen and (min-resolution: 2dppx) {
+        & { 
+          background-image: $background-hero, url(../images/images_adaptive/header_img_tabl_ret.jpg);
+        } 
+      }
+ 
+     }
+     @media screen and (min-width: 769px) {
+    
+      background-image:
+        $background-hero,
+      url(../images/background-pic.jpg);
+
+      @media screen and (min-device-pixel-ratio: 2),
+      screen and (min-resolution: 192dpi),
+      screen and (min-resolution: 2dppx) {
+        & { 
+          background-image: $background-hero, url(../images/images_adaptive/header_img_desk_ret.jpg);
+        } 
+      }
+ 
+     }
+   
   }
   .title {
 

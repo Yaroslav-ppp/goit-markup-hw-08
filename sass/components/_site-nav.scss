@@ -49,10 +49,10 @@
                 border-radius: 2px;
                 display: flex;
                 position: absolute;
-                bottom: -32px;
+                bottom: -33px;
                 @media screen and (min-width: 1200px) {
 
-                bottom: 0;
+                bottom: -1px;
                 }
             }
           }

@@ -25,39 +25,94 @@
           <a href="#" class="logo"
             >Web<span class="logo__header">Studio</span></a>
 
-           <!-- mobile menu -->
+            <!-- mobile menu -->
 
-           <button
-           type="button"
-           class="menu__button js-open-menu"
-           aria-expanded="false"
-           aria-controls="mobile-menu"
-         >
-           <svg
-             width="40"
-             height="40"
-             aria-label="переключатель мобильного меню"
-           >
-             <use
-         
-               href="./images/icons.svg#icon-menu"
-             ></use>
-           </svg>
-         </button>
-         <div class="menu js-menu-container" id="mobile-menu">
-         <button type="button" class="menu__button js-close-menu">
-           <svg
-             width="40"
-             height="40"
-             aria-label="переключатель мобильного меню"
-           >
-             <use
+            <button
+              type="button"
+              class="menu__button js-open-menu"
+              aria-expanded="false"
+              aria-controls="mobile-menu"
+            >
+              <svg
+                width="40"
+                height="40"
+                aria-label="переключатель мобильного меню"
+              >
+                <use
             
-               href="./images/icons.svg#icon-close"
-             ></use>
-           </svg>
-         </button>
-         </div>
+                  href="./images/icons.svg#icon-menu"
+                ></use>
+              </svg>
+            </button>
+            <div class="menu js-menu-container container" id="mobile-menu">
+             
+            <button type="button" class="menu__button js-close-menu">
+              <svg
+                width="40"
+                height="40"
+                aria-label="переключатель мобильного меню"
+              >
+                <use
+               
+                  href="./images/icons.svg#icon-close"
+                ></use>
+              </svg>
+            </button>
+            <ul class="menu__site-nav">
+              <li class="list menu-site-nav__item">
+                <a href="./index.html" class="menu-site-nav__link"
+                  >Студия</a
+                >
+              </li>
+              <li class="list menu-site-nav__item">
+                <a href="./portfolio.html" class="menu-site-nav__link menu-site-nav__carrent">Портфолио</a>
+              </li>
+              <li class="list menu-site-nav__item">
+                <a href="#" class="menu-site-nav__link">Контакты</a>
+              </li>
+            </ul>
+            <div class="menu__contacts">
+            <ul class="">
+              <li class="list menu-contact-tel__item">
+                <a href="tel:+380961111111" class="menu-contact-tel__link">
+                  
+                  +38 096 111 11 11
+                </a>
+              </li>
+              <li class="list menu-contact-mail__item">
+                <a href="mailto:info@devstudio.com" class="menu-contact-mail__link">
+                  
+                  info@devstudio.com
+                </a>
+              </li>
+             
+            </ul>
+           
+            <ul class="menu-social">
+              <li class="list">
+                <a href="" class="menu-social__link">
+                  Instagram
+                </a>
+              </li>
+              <li class="list">
+                <a href="" class="menu-social__link">
+                  Twitter
+                </a>
+              </li>
+              <li class="list">
+                <a href="" class="menu-social__link">
+                  Facebook
+                </a>
+              </li>
+              <li class="list">
+                <a href="" class="menu-social__link menu-social__Linkedin">
+                  LinkedIn
+                </a>
+              </li>
+            </ul>
+          </div>
+          </div>
+          
           <ul class="site-nav">
             <li class="list site-nav__item">
               <a href="./index.html" class="site-nav__link">Студия</a>
@@ -117,14 +172,25 @@
         <!-- our projects -->
 
         <ul class="list works-set">
-          <li class="works-set__item">
+          <li class="list works-set__item">
             <a href="" class="works-set__link">
               <div class="works-set__picture">
-                <!-- <img
-                  src="./images/tekhnokryak.jpg"
-                  alt="веб-сайт-технокряк"
-                  width="370"
-                /> -->
+
+                <img
+                alt="веб-сайт-технокряк"
+                src="./images/images_adaptive/tekhnokryak_tabl.jpg"
+                srcset="
+                
+                ./images/images_adaptive/tekhnokryak_tabl.jpg 354w,
+                ./images/tekhnokryak.jpg 370w,
+                ./images/images_adaptive/tekhnokryak_mob.jpg 450w,
+                ./images/images_adaptive/tekhnokryak_tabl@2x.jpg 708w,
+                ./images/images_adaptive/tekhnokryak_desk.jpg 740w,
+                ./images/images_adaptive/tekhnokryak_mob@2x.jpg 900w,
+                "
+                sizes="(min-width: 1200px) 370px, (min-width: 768px) 354px, (max-width: 480px) 450px, 100vw"
+              />
+
                 <div class="works-set__overlay">
                   <p>
                     Технокряк это современная площадка распространения
@@ -139,14 +205,25 @@
               </div>
             </a>
           </li>
-          <li class="works-set__item">
+          <li class="list works-set__item">
             <a href="" class="works-set__link">
               <div class="works-set__picture">
-                <!-- <img
-                  src="./images/poster-new-orlean-vs-golden-star.jpg"
-                  alt="постер-new-orlean-против-golden-star"
-                  width="370"
-                /> -->
+
+                <img
+                alt="постер-new-orlean-против-golden-star"
+                src="./images/images_adaptive/new_orlean_vs_golden_star_tabl.jpg"
+                srcset="
+                
+                ./images/images_adaptive/new_orlean_vs_golden_star_tabl.jpg 354w,
+                ./images/poster-new-orlean-vs-golden-star.jpg 370w,
+                ./images/images_adaptive/new_orlean_vs_golden_star_mob.jpg 450w,
+                ./images/images_adaptive/new_orlean_vs_golden_star_tabl@2x.jpg 708w,
+                ./images/images_adaptive/new_orlean_vs_golden_star_desk.jpg 740w,
+                ./images/images_adaptive/new_orlean_vs_golden_star_mob@2x.jpg 900w,
+                "
+                sizes="(min-width: 1200px) 370px, (min-width: 768px) 354px, (max-width: 480px) 450px, 100vw"
+              />
+               
                 <div class="works-set__overlay">
                   <p>
                     Технокряк это современная площадка распространения
@@ -164,14 +241,26 @@
               </div>
             </a>
           </li>
-          <li class="works-set__item">
+          <li class="list works-set__item">
             <a href="" class="works-set__link">
               <div class="works-set__picture">
-                <!-- <img
-                  src="./images/restaurant-seafood.jpg"
-                  alt="ресторан-seafood"
-                  width="370"
-                /> -->
+
+                <img
+                alt="ресторан-seafood"
+                src=" ./images/images_adaptive/seafood_tabl.jpg"
+                srcset="
+                
+                ./images/images_adaptive/seafood_tabl.jpg 354w,
+                ./images/restaurant-seafood.jpg 370w,
+                ./images/images_adaptive/seafood_mob.jpg 450w,
+                ./images/images_adaptive/seafood_tabl@2x.jpg 708w,
+                ./images/images_adaptive/seafood_desk.jpg 740w,
+                ./images/images_adaptive/seafood_mob@2x.jpg 900w,
+                
+                "
+                sizes="(min-width: 1200px) 370px, (min-width: 768px) 354px, (max-width: 480px) 450px, 100vw"
+              />
+                
                 <div class="works-set__overlay">
                   <p>
                     Технокряк это современная площадка распространения
@@ -187,14 +276,26 @@
               </div>
             </a>
           </li>
-          <li class="works-set__item">
+          <li class="list works-set__item">
             <a href="" class="works-set__link">
               <div class="works-set__picture">
-                <!-- <img
-                  src="./images/project-prime.jpg"
-                  alt="проект-prime"
-                  width="370"
-                /> -->
+
+                <img
+                alt="проект-prime"
+                src="./images/images_adaptive/prime_tabl.jpg"
+                srcset="
+                
+                ./images/images_adaptive/prime_tabl.jpg 354w,
+                ./images/project-prime.jpg 370w,
+                ./images/images_adaptive/prime_mob.jpg 450w,
+                ./images/images_adaptive/prime_tabl@2x.jpg 708w,
+                ./images/images_adaptive/prime_desk.jpg 740w,
+                ./images/images_adaptive/prime_mob@2x.jpg 900w,
+                
+                "
+                sizes="(min-width: 1200px) 370px, (min-width: 768px) 354px, (max-width: 480px) 450px, 100vw"
+              />
+                
                 <div class="works-set__overlay">
                   <p>
                     Технокряк это современная площадка распространения
@@ -209,14 +310,26 @@
               </div>
             </a>
           </li>
-          <li class="works-set__item">
+          <li class="list works-set__item">
             <a href="" class="works-set__link">
               <div class="works-set__picture">
-                <!-- <img
-                  src="./images/project-boxes.jpg"
-                  alt="проект-boxes"
-                  width="370"
-                /> -->
+
+                <img
+                alt="проект-boxes"
+                src="./images/images_adaptive/boxes_tabl.jpg"
+                srcset="
+                
+                ./images/images_adaptive/boxes_tabl.jpg 354w,
+                ./images/project-boxes.jpg 370w,
+                ./images/images_adaptive/boxes_mob.jpg 450w,
+                ./images/images_adaptive/boxes_tabl@2x.jpg 708w,
+                ./images/images_adaptive/boxes_desk.jpg 740w,
+                ./images/images_adaptive/boxes_mob@2x.jpg 900w,
+                
+                "
+                sizes="(min-width: 1200px) 370px, (min-width: 768px) 354px, (max-width: 480px) 450px, 100vw"
+              />
+                
                 <div class="works-set__overlay">
                   <p>
                     Технокряк это современная площадка распространения
@@ -231,14 +344,25 @@
               </div>
             </a>
           </li>
-          <li class="works-set__item">
+          <li class="list works-set__item">
             <a href="" class="works-set__link">
               <div class="works-set__picture">
-                <!-- <img
-                  src="./images/inspiration-has-no-borders.jpg"
-                  alt="inspiration-has-no-borders"
-                  width="370"
-                /> -->
+
+                <img
+                alt="inspiration-has-no-borders"
+                src="./images/images_adaptive/Inspiration_has_no_Borders_tabl.jpg"
+                srcset="
+                
+                ./images/images_adaptive/Inspiration_has_no_Borders_tabl.jpg 354w,
+                ./images/inspiration-has-no-borders.jpg 370w,
+                ./images/images_adaptive/Inspiration_has_no_Borders_mob.jpg 450w,
+                ./images/images_adaptive/Inspiration_has_no_Borders_tabl@2x.jpg 708w,
+                ./images/images_adaptive/Inspiration_has_no_Borders_desk.jpg 740w,
+                ./images/images_adaptive/Inspiration_has_no_Borders_mob@2x.jpg 900w,
+                "
+                sizes="(min-width: 1200px) 370px, (min-width: 768px) 354px, (max-width: 480px) 450px, 100vw"
+              />
+               
                 <div class="works-set__overlay">
                   <p>
                     Технокряк это современная площадка распространения
@@ -253,14 +377,25 @@
               </div>
             </a>
           </li>
-          <li class="works-set__item">
+          <li class="list works-set__item">
             <a href="" class="works-set__link works-set__item">
               <div class="works-set__picture">
-                <!-- <img
-                  src="./images/publikation-limited-edition.jpg"
-                  alt="издание-limited-edition"
-                  width="370"
-                /> -->
+
+                <img
+                alt="издание-limited-edition"
+                src="./images/images_adaptive/Limited_Edition_tabl.jpg"
+                srcset="
+                
+                ./images/images_adaptive/Limited_Edition_tabl.jpg 354w,
+                ./images/publikation-limited-edition.jpg 370w,
+                ./images/images_adaptive/Limited_Edition_mob.jpg 450w,
+                ./images/images_adaptive/Limited_Edition_tabl@2x.jpg 708w,
+                ./images/images_adaptive/Limited_Edition_desk.jpg 740w,
+                ./images/images_adaptive/Limited_Edition_mob@2x.jpg 900w,
+                "
+                sizes="(min-width: 1200px) 370px, (min-width: 768px) 354px, (max-width: 480px) 450px, 100vw"
+              />
+                
                 <div class="works-set__overlay">
                   <p>
                     Технокряк это современная площадка распространения
@@ -275,14 +410,25 @@
               </div>
             </a>
           </li>
-          <li class="works-set__item">
+          <li class="list works-set__item">
             <a href="" class="works-set__link">
               <div class="works-set__picture">
-                <!-- <img
-                  src="./images/project-lab.jpg"
-                  alt="проект-lab"
-                  width="370"
-                /> -->
+
+                <img
+                alt="проект-lab"
+                src="./images/images_adaptive/lab_tabl.jpg"
+                srcset="
+                
+                ./images/images_adaptive/lab_tabl.jpg 354w,
+                ./images/project-lab.jpg 370w,
+                ./images/images_adaptive/lab_mob.jpg 450w,
+                ./images/images_adaptive/lab_tabl@2x.jpg 708w,
+                ./images/images_adaptive/lab_desk.jpg 740w,
+                ./images/images_adaptive/lab_mob@2x.jpg 900w,
+                "
+                sizes="(min-width: 1200px) 370px, (min-width: 768px) 354px, (max-width: 480px) 450px, 100vw"
+              />
+             
                 <div class="works-set__overlay">
                   <p>
                     Технокряк это современная площадка распространения
@@ -297,14 +443,26 @@
               </div>
             </a>
           </li>
-          <li class="works-set__item">
-            <a href="" class="works-set__link">
+          <li class="list works-set__item ">
+            <a href="" class="works-set__link works-set__last-child">
               <div class="works-set__picture">
-                <!-- <img
-                  src="./images/growing-business.jpg"
-                  alt="growing-business"
-                  width="370"
-                /> -->
+
+                <img
+                alt="growing-business"
+                src="./images/images_adaptive/Growing_Business_tabl.jpg"
+                srcset="
+                
+                ./images/images_adaptive/Growing_Business_tabl.jpg 354w,
+                ./images/growing-business.jpg 370w,
+                ./images/images_adaptive/Growing_Business_mob.jpg 450w,
+                ./images/images_adaptive/Growing_Business_tabl@2x.jpg 708w,
+                ./images/images_adaptive/Growing_Business_desk.jpg 740w,
+                ./images/images_adaptive/Growing_Business_mob@2x.jpg 900w,
+                "
+                sizes="(min-width: 1200px) 370px, (min-width: 768px) 354px, (max-width: 480px) 450px, 100vw"
+              />
+             
+              
                 <div class="works-set__overlay">
                   <p>
                     Технокряк это современная площадка распространения

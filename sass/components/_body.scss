@@ -1,51 +1,51 @@
 body {
-    background-color: $main-background;
-    color: $main-text;
-    font-family: Roboto, sans-serif;
-  }
-  h1,
-  h2,
-  h3,
-  h4,
-  h5,
-  h6,
-  ul,
-  p {
-    margin: 0;
-  }
-  button {
-    cursor: pointer;
-  }
- 
-  img {
-    display: block;
-  }
-  .container {
-    margin-left: auto;
-    margin-right: auto;
-    padding-right: 15px;
-    padding-left: 15px;
+  background-color: $main-background;
+  color: $main-text;
+  font-family: Roboto, sans-serif;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+ul,
+p {
+  margin: 0;
+}
+button {
+  cursor: pointer;
+}
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+.list {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  padding-right: 15px;
+  padding-left: 15px;
 
-    
-    
-    @media screen and (min-width: 480px) {
-   
-      width: 480px; 
-     
-     }
-     @media screen and (min-width: 768px) {
-   
-      width: 768px; 
-    
-     }
-     @media screen and (min-width: 1200px) {
-      
-      width: 1200px; 
-    
-    }
+  @media screen and (min-width: 480px) {
+    width: 480px;
+  }
+
+  @media screen and (min-width: 768px) {
+    width: 768px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    width: 1200px;
+  }
 
   &__title {
-    
+    display: block;
     margin: 16.5px 0 46.5px 0;
     text-align: center;
     font-size: 28px;
@@ -55,23 +55,16 @@ body {
     color: $secondary-text;
 
     @media screen and (min-width: 1200px) {
-
-    display: block;
-    padding-top: 0;
-    margin-top: 0;
-    margin-left: auto;
-    margin-right: auto;
-    font-size: 36px;
-    line-height: 1.17;
-    margin-bottom: 50px;
+      padding-top: 0;
+      margin-top: 0;
+      margin-left: auto;
+      margin-right: auto;
+      font-size: 36px;
+      line-height: 1.17;
+      margin-bottom: 50px;
     }
-   
-   }
+    @media screen and (max-width: 479px) {
+      letter-spacing: 0;
+    }
   }
-  .list {
-    padding: 0;
-    margin: 0;
-    list-style: none;
-  }
-   
-  
+}
