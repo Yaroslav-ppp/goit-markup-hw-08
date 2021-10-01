@@ -27,7 +27,7 @@
     <!-- end -->
     <link rel="stylesheet" href="./css/main.min.css" />
   </head>
-  <body>
+  <body >
     <!-- header -->
     <header class="header">
       <div class="container header__flex">
@@ -233,10 +233,17 @@
             <li class="we-doing__item">
               <div class="we-doing__thumb">
                 <img
-                  src="./images/block-scheme-hands-netbook.jpg"
-                  alt="схема-работа-за-нетбуком"
-                  width="370"
-                />
+                alt="схема-работа-за-нетбуком"
+                src="./images/block-scheme-hands-netbook.jpg  "
+                srcset="
+                  
+                  ./images/block-scheme-hands-netbook.jpg   370w,
+                  ./images/images_adaptive/desktop-apps.jpg   740w,
+                  
+                "
+                sizes="(min-width: 1200px) 370px, 100vw"
+              />
+
                 <div class="we-doing__title">
                   <h3>Десктопные приложения</h3>
                 </div>
@@ -245,10 +252,18 @@
             <li class="we-doing__item">
               <div class="we-doing__thumb">
                 <img
-                  src="./images/cellphone-hands-laptop.jpg"
-                  alt="работа-за-смартфоном-ноутбуком"
-                  width="370"
-                />
+                alt="работа-за-смартфоном-ноутбуком"
+                src="./images/block-scheme-hands-netbook.jpg  "
+                srcset="
+                  
+                ./images/cellphone-hands-laptop.jpg   370w,
+                  ./images/images_adaptive/mobile-apps.jpg  740w,
+                  
+                "
+                sizes="(min-width: 1200px) 370px, 100vw"
+              />
+
+                
                 <div class="we-doing__title">
                   <h3>Мобильные приложения</h3>
                 </div>
@@ -257,10 +272,17 @@
             <li class="we-doing__item">
               <div class="we-doing__thumb">
                 <img
-                  src="./images/hand-tablet.jpg"
-                  alt="работа-с-планшетом"
-                  width="370"
-                />
+                alt="работа-за-смартфоном-ноутбуком"
+                src="./images/block-scheme-hands-netbook.jpg  "
+                srcset="
+                  
+                ./images/cellphone-hands-laptop.jpg   370w,
+                  ./images/images_adaptive/design-solution.jpg  740w,
+                  
+                "
+                sizes="(min-width: 1200px) 370px, 100vw"
+              />
+
                 <div class="we-doing__title">
                   <h3>Дизайнерские решения</h3>
                 </div>
@@ -651,6 +673,8 @@
     <!-- connection js -->
     <script src="./js/modal.js"></script>
     <script src="./js/mobile-menu.js"></script>
-    <script      defer      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="      crossorigin="anonymous"    ></script>
+    
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js" integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA==" crossorigin="anonymous"></script>
+    
   </body>
 </html>

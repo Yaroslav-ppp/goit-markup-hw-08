@@ -11,9 +11,8 @@
     flex-basis: calc((100vw - 90px) / 3);
   }
   @media screen and (max-width: 479px) {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    flex-basis: calc(100% / 2 - 30px);
+    justify-content: center;
   }
 
   &__link {
@@ -33,6 +32,16 @@
       border: 1px solid $accent-color;
       fill: $accent-color;
     }
+    @media screen and (max-width: 479px) {
+    width: calc(100%/2 - 30px);
+    max-height: 92px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    }
+    
+
     @media screen and (min-width: 768px) and (max-width: 1199px) {
       width: 226px;
       margin: 15px;

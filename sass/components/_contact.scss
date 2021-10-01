@@ -8,17 +8,14 @@
   }
   padding-left: 0;
   @media screen and (min-width: 768px) {
+    margin-left: auto;
     &__icon {
       margin-right: 10px;
     }
   }
 
   .contact__item {
-    &:hover,
-    &:focus {
-      color: $accent-color;
-      fill: $accent-color;
-    }
+    transition: color $timing-function, fill $timing-function;
     @media screen and (min-width: 768px) {
       &:not(:last-child) {
         margin-bottom: 10px;
@@ -29,7 +26,6 @@
       margin-bottom: 0;
     }
     .contact__link {
-      display: inline-block;
       font-weight: 500;
       font-size: 14px;
       line-height: 1.14;
@@ -38,17 +34,15 @@
       text-decoration: none;
       font-style: normal;
       fill: $main-text;
-      color: $main-text;
-      transition: color $timing-function, fill $timing-function;
+
       @media screen and (min-width: 767px) {
         margin-bottom: 10px;
         &:last-child {
           margin-bottom: 0;
         }
-
-        @media screen and (min-width: 1200px) {
-          margin-bottom: 0;
-        }
+      }
+      @media screen and (min-width: 1200px) {
+        margin-bottom: 0;
       }
 
       @media screen and (min-width: 1200px) {
@@ -56,6 +50,11 @@
         align-items: center;
         padding-top: 31px;
         padding-bottom: 23px;
+      }
+      &:hover,
+      &:focus {
+        color: $accent-color;
+        fill: $accent-color;
       }
     }
   }
