@@ -1,6 +1,8 @@
 .menu__button {
+  // я в шоці - видалив кнопку а вона є
+  display: none;
   @media screen and (max-width: 767px) {
-    display: inline-block;
+    // display: inline-block;
     align-items: center;
     // костиль для прибирання 4px в іконки
     font-size: 0;
@@ -8,9 +10,10 @@
     margin: 0;
     border: none;
     background-color: transparent;
-    position: absolute;
-    top: 10px;
-    right: 15px;
+
+    // position: absolute;
+    // top: 10px;
+    // right: -15px;
     &:hover,
     &:focus {
       fill: $accent-color;
@@ -27,37 +30,27 @@
 .menu {
   position: fixed;
   width: 100vw;
-  min-height: 100vh;
-  z-index: 10;
+  height: 100vh;
+  z-index: 999;
   left: 0;
   top: 0;
   padding: 48px 40px 48px 0;
   background: $white-color;
   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.04), 0px 2px 4px rgba(0, 0, 0, 0.08),
     0px 1px 3px rgba(0, 0, 0, 0.16);
-  transform: translatex(100%);
+  transform: translatey(100%);
   transition: transform $timing-function;
   &.is-hidden {
-    opacity: 0;
+    opacity: 1;
     visibility: hidden;
     pointer-events: none;
   }
   @media screen and (min-width: 769px) {
-    & {
+   
       display: none;
-    }
+    
   }
 
-}
-.menu.is-hidden {
-  opacity: 0;
-  visibility: hidden;
-  pointer-events: none;
-}
-@media screen and (min-width: 769px) {
-  .menu {
-    display: none;
-  }
 }
 
 

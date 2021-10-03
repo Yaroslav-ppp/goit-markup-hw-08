@@ -1,4 +1,5 @@
 .section-hero {
+  // overflow: hidden;
   padding-top: 118px;
   padding-bottom: 118px;
   height: 400px;
@@ -11,54 +12,49 @@
   background-repeat: no-repeat;
   color: $white-color;
   background-image: $background-hero,
-    url(../images/images_adaptive/header_img_mob1x.jpg);
-    @media screen and (min-resolution: 192dpi),
-    screen and (min-resolution: 2dppx) {
-    
-      background-image: $background-hero,
-        url(../images/images_adaptive/header_img_mob_ret2x.jpg);
-    
-  }
-  @media screen and (min-width: 480px)  {
-    background-image: $background-hero,
-      url(../images/images_adaptive/header_img_tabl1x.jpg);
-
-    @media 
-      screen and (min-resolution: 192dpi),
-      screen and (min-resolution: 2dppx) {
-  
-        background-image: $background-hero,
-          url(../images/images_adaptive/header_img_tabl_ret2x.jpg);
-    
-    }
-  }
-  @media screen and (min-width: 768px) {
-    background-image: $background-hero, url(../images/background-pic1x.jpg);
-    @media
-    screen and (min-resolution: 192dpi),
-    screen and (min-resolution: 2dppx) {
-    
-      background-image: $background-hero,
-        url(../images/images_adaptive/header_img_desk_ret2x.jpg);
-    
-  }
-  }
+    url(../images/images_adaptive/header_img_mob.jpg);
   @media screen and (min-width: 1200px) {
     padding-top: 200px;
     padding-bottom: 200px;
     height: 600px;
     max-width: 1600px;
-    background-image: $background-hero, url(../images/background-pic1x.jpg);
-    @media
-      screen and (min-resolution: 192dpi),
-      screen and (min-resolution: 2dppx) {
-      
-        background-image: $background-hero,
-          url(../images/images_adaptive/header_img_desk_ret2x.jpg);
-      
+    @media screen and (min-device-pixel-ratio: 2),
+    screen and (min-resolution: 192dpi),
+    screen and (min-resolution: 2dppx) {
+    & {
+      background-image: $background-hero,
+        url(../images/images_adaptive/header_img_mob_ret.jpg);
     }
   }
+  }
 
+  
+
+  @media screen and (min-width: 481px) and (max-width: 768px) {
+    background-image: $background-hero,
+      url(../images/images_adaptive/header_img_tabl.jpg);
+
+    @media screen and (min-device-pixel-ratio: 2),
+      screen and (min-resolution: 192dpi),
+      screen and (min-resolution: 2dppx) {
+      & {
+        background-image: $background-hero,
+          url(../images/images_adaptive/header_img_tabl_ret.jpg);
+      }
+    }
+  }
+  @media screen and (min-width: 769px) {
+    background-image: $background-hero, url(../images/background-pic.jpg);
+
+    @media screen and (min-device-pixel-ratio: 2),
+      screen and (min-resolution: 192dpi),
+      screen and (min-resolution: 2dppx) {
+      & {
+        background-image: $background-hero,
+          url(../images/images_adaptive/header_img_desk_ret.jpg);
+      }
+    }
+  }
 }
 .title {
   margin-top: 0;

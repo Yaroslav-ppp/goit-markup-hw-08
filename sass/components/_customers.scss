@@ -2,18 +2,21 @@
   display: flex;
   flex-wrap: wrap;
   margin: -15px;
-  flex-basis: calc((100vw - 30px) / 2);
+  flex-basis: calc(100% / 2 - 60px);
+
+  @media screen and (min-width: 768px) {
+    flex-basis: calc((100vw - 90px) / 3);
+  }
+ 
   @media screen and (min-width: 1200px) {
     margin-left: auto;
     margin-right: auto;
   }
-  @media screen and (min-width: 768px) {
-    flex-basis: calc((100vw - 90px) / 3);
-  }
-  @media screen and (max-width: 479px) {
-    flex-basis: calc(100% / 2 - 30px);
-    justify-content: center;
-  }
+  // @media screen and (max-width: 479px) {
+  //   width: calc(100vw/2 - 60px);
+  //   justify-content: center;
+  // }
+  
 
   &__link {
     margin: 15px;
