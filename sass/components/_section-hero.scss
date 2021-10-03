@@ -11,24 +11,24 @@
   background-repeat: no-repeat;
   color: $white-color;
   background-image: $background-hero,
-    url(../images/images_adaptive/header_img_mob.jpg);
+    url(../images/images_adaptive/header_img_mob1x.jpg);
     @media screen and (min-resolution: 192dpi),
     screen and (min-resolution: 2dppx) {
     
       background-image: $background-hero,
-        url(../images/images_adaptive/header_img_mob_ret.jpg);
+        url(../images/images_adaptive/header_img_mob_ret2x.jpg);
     
   }
   @media screen and (min-width: 480px)  {
     background-image: $background-hero,
-      url(../images/images_adaptive/header_img_tabl.jpg);
+      url(../images/images_adaptive/header_img_tabl1x.jpg);
 
     @media 
       screen and (min-resolution: 192dpi),
       screen and (min-resolution: 2dppx) {
   
         background-image: $background-hero,
-          url(../images/images_adaptive/header_img_tabl_ret.jpg);
+          url(../images/images_adaptive/header_img_tabl_ret2x.jpg);
     
     }
   }
@@ -39,7 +39,7 @@
     screen and (min-resolution: 2dppx) {
     
       background-image: $background-hero,
-        url(../images/images_adaptive/header_img_desk_ret.jpg);
+        url(../images/images_adaptive/header_img_desk_ret2x.jpg);
     
   }
   }
@@ -54,7 +54,7 @@
       screen and (min-resolution: 2dppx) {
       
         background-image: $background-hero,
-          url(../images/images_adaptive/header_img_desk_ret.jpg);
+          url(../images/images_adaptive/header_img_desk_ret2x.jpg);
       
     }
   }
