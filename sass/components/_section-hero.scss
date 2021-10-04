@@ -1,8 +1,12 @@
 .section-hero {
-  // overflow: hidden;
+  // display: block;
+  padding: 0;
   padding-top: 118px;
   padding-bottom: 118px;
-  height: 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  max-width: 1600px;
   margin-left: auto;
   margin-right: auto;
   background-size: cover;
@@ -16,9 +20,11 @@
   @media screen and (min-width: 1200px) {
     padding-top: 200px;
     padding-bottom: 200px;
-    height: 600px;
-    max-width: 1600px;
-    @media screen and (min-device-pixel-ratio: 2),
+    
+    // max-width: 1600px;
+  }
+
+  @media screen and (min-device-pixel-ratio: 2),
     screen and (min-resolution: 192dpi),
     screen and (min-resolution: 2dppx) {
     & {
@@ -26,9 +32,6 @@
         url(../images/images_adaptive/header_img_mob_ret.jpg);
     }
   }
-  }
-
-  
 
   @media screen and (min-width: 481px) and (max-width: 768px) {
     background-image: $background-hero,

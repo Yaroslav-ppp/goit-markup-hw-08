@@ -3,10 +3,6 @@ body {
   color: $main-text;
   font-family: Roboto, sans-serif;
 }
-// html, body {
-//   // Прибираю горизонтальну прокрутку в мобільній версії?
-//   overflow-x: hidden;
-// }
 h1,
 h2,
 h3,
@@ -31,18 +27,14 @@ img {
   list-style: none;
 }
 .container {
-  // position: relative;
-
+  width: 100%;
   margin-left: auto;
   margin-right: auto;
   padding-right: 15px;
   padding-left: 15px;
-  @media screen and (min-width: 320px) {
-    width: 100%;
-    margin: 0 auto;
- 
+  @media screen and (max-width: 480px) {
+    max-width: 480px;
   }
-
 
   @media screen and (min-width: 480px) {
     width: 480px;
@@ -55,11 +47,17 @@ img {
   @media screen and (min-width: 1200px) {
     width: 1200px;
   }
+  html, body, .container {
+
+  // Прибираю горизонтальну прокрутку в мобільній версії?
+  overflow-x: hidden;
+}
 
   &__title {
-    display: inline-block;
-    margin: 16.5px 0 46.5px 0;
     text-align: center;
+    // display: block;
+    margin: 16.5px 0 46.5px 0;
+    // text-align: center;
     font-size: 28px;
     line-height: 1.18px;
     font-weight: 700;
@@ -76,10 +74,7 @@ img {
       margin-bottom: 50px;
     }
     @media screen and (max-width: 479px) {
-      font-size: 26px;
-      line-height: 1.18px;
-      font-weight: 700;
-      letter-spacing: 0.03em;
+      letter-spacing: 0;
     }
   }
 }
