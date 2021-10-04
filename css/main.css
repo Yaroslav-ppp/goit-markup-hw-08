@@ -189,18 +189,27 @@ img {
   }
 }
 
-.container html, .container body, .container .container {
+.container html {
   overflow-x: hidden;
 }
 
 .container__title {
-  text-align: center;
-  margin: 16.5px 0 46.5px 0;
+  padding-top: 0;
+  margin-top: 0;
+  margin-left: auto;
+  margin-right: auto;
   font-size: 28px;
-  line-height: 1.18px;
+  line-height: 1.18;
   font-weight: 700;
   letter-spacing: 0.03em;
+  margin-bottom: 30px;
   color: #212121;
+}
+
+@media screen and (min-width: 768px) {
+  .container__title {
+    text-align: center;
+  }
 }
 
 @media screen and (min-width: 1200px) {
@@ -578,7 +587,7 @@ img {
   background-color: #2f303a;
   background-repeat: no-repeat;
   color: #ffffff;
-  background-image: radial-gradient(ellipse at center, rgba(47, 48, 58, 0.5), rgba(115, 115, 117, 0.1)), url(../images/images_adaptive/header_img_mob.jpg);
+  background-image: radial-gradient(ellipse at center, rgba(47, 48, 58, 0.5), rgba(115, 115, 117, 0.1)), url(../images/images_adaptive/header_img_mob1x.jpg);
 }
 
 @media screen and (min-width: 1200px) {
@@ -590,31 +599,31 @@ img {
 
 @media screen and (min-device-pixel-ratio: 2), screen and (-webkit-min-device-pixel-ratio: 2), screen and (min-resolution: 192dpi), screen and (min-resolution: 2dppx) {
   .section-hero {
-    background-image: radial-gradient(ellipse at center, rgba(47, 48, 58, 0.5), rgba(115, 115, 117, 0.1)), url(../images/images_adaptive/header_img_mob_ret.jpg);
+    background-image: radial-gradient(ellipse at center, rgba(47, 48, 58, 0.5), rgba(115, 115, 117, 0.1)), url(../images/images_adaptive/header_img_mob_ret2x.jpg);
   }
 }
 
 @media screen and (min-width: 481px) and (max-width: 768px) {
   .section-hero {
-    background-image: radial-gradient(ellipse at center, rgba(47, 48, 58, 0.5), rgba(115, 115, 117, 0.1)), url(../images/images_adaptive/header_img_tabl.jpg);
+    background-image: radial-gradient(ellipse at center, rgba(47, 48, 58, 0.5), rgba(115, 115, 117, 0.1)), url(../images/images_adaptive/header_img_tabl1x.jpg);
   }
 }
 
 @media screen and (min-width: 481px) and (max-width: 768px) and (min-device-pixel-ratio: 2), screen and (min-width: 481px) and (max-width: 768px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 481px) and (max-width: 768px) and (min-resolution: 192dpi), screen and (min-width: 481px) and (max-width: 768px) and (min-resolution: 2dppx) {
   .section-hero {
-    background-image: radial-gradient(ellipse at center, rgba(47, 48, 58, 0.5), rgba(115, 115, 117, 0.1)), url(../images/images_adaptive/header_img_tabl_ret.jpg);
+    background-image: radial-gradient(ellipse at center, rgba(47, 48, 58, 0.5), rgba(115, 115, 117, 0.1)), url(../images/images_adaptive/header_img_tabl_ret2x.jpg);
   }
 }
 
 @media screen and (min-width: 769px) {
   .section-hero {
-    background-image: radial-gradient(ellipse at center, rgba(47, 48, 58, 0.5), rgba(115, 115, 117, 0.1)), url(../images/background-pic.jpg);
+    background-image: radial-gradient(ellipse at center, rgba(47, 48, 58, 0.5), rgba(115, 115, 117, 0.1)), url(../images/background-pic1x.jpg);
   }
 }
 
 @media screen and (min-width: 769px) and (min-device-pixel-ratio: 2), screen and (min-width: 769px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 769px) and (min-resolution: 192dpi), screen and (min-width: 769px) and (min-resolution: 2dppx) {
   .section-hero {
-    background-image: radial-gradient(ellipse at center, rgba(47, 48, 58, 0.5), rgba(115, 115, 117, 0.1)), url(../images/images_adaptive/header_img_desk_ret.jpg);
+    background-image: radial-gradient(ellipse at center, rgba(47, 48, 58, 0.5), rgba(115, 115, 117, 0.1)), url(../images/images_adaptive/header_img_desk_ret2x.jpg);
   }
 }
 
@@ -690,7 +699,6 @@ img {
 
 @media screen and (min-width: 768px) {
   .our-advantages {
-    width: 100vw;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -829,9 +837,14 @@ img {
   }
 }
 
+@media screen and (max-width: 768px) {
+  .staff-card-set {
+    margin-top: -15px;
+  }
+}
+
 @media screen and (min-width: 768px) {
   .staff-card-set {
-    width: 100vw;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -845,7 +858,23 @@ img {
 .staff-card-set__item {
   max-width: 450px;
   text-align: center;
-  margin-bottom: 30px;
+  -ms-flex-preferred-size: calc(100% - 30px);
+      flex-basis: calc(100% - 30px);
+  margin: 15px;
+}
+
+@media screen and (min-width: 768px) {
+  .staff-card-set__item {
+    -ms-flex-preferred-size: calc(100% / 2 - 30px);
+        flex-basis: calc(100% / 2 - 30px);
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .staff-card-set__item {
+    -ms-flex-preferred-size: calc(100% / 4 - 30px);
+        flex-basis: calc(100% / 4 - 30px);
+  }
 }
 
 .staff-card-set__item:last-child {

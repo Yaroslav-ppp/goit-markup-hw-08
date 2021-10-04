@@ -1,5 +1,5 @@
 .section-hero {
-  // display: block;
+ 
   padding: 0;
   padding-top: 118px;
   padding-bottom: 118px;
@@ -16,12 +16,12 @@
   background-repeat: no-repeat;
   color: $white-color;
   background-image: $background-hero,
-    url(../images/images_adaptive/header_img_mob.jpg);
+    url(../images/images_adaptive/header_img_mob1x.jpg);
   @media screen and (min-width: 1200px) {
     padding-top: 200px;
     padding-bottom: 200px;
     
-    // max-width: 1600px;
+   
   }
 
   @media screen and (min-device-pixel-ratio: 2),
@@ -29,32 +29,32 @@
     screen and (min-resolution: 2dppx) {
     & {
       background-image: $background-hero,
-        url(../images/images_adaptive/header_img_mob_ret.jpg);
+        url(../images/images_adaptive/header_img_mob_ret2x.jpg);
     }
   }
 
   @media screen and (min-width: 481px) and (max-width: 768px) {
     background-image: $background-hero,
-      url(../images/images_adaptive/header_img_tabl.jpg);
+      url(../images/images_adaptive/header_img_tabl1x.jpg);
 
     @media screen and (min-device-pixel-ratio: 2),
       screen and (min-resolution: 192dpi),
       screen and (min-resolution: 2dppx) {
       & {
         background-image: $background-hero,
-          url(../images/images_adaptive/header_img_tabl_ret.jpg);
+          url(../images/images_adaptive/header_img_tabl_ret2x.jpg);
       }
     }
   }
   @media screen and (min-width: 769px) {
-    background-image: $background-hero, url(../images/background-pic.jpg);
+    background-image: $background-hero, url(../images/background-pic1x.jpg);
 
     @media screen and (min-device-pixel-ratio: 2),
       screen and (min-resolution: 192dpi),
       screen and (min-resolution: 2dppx) {
       & {
         background-image: $background-hero,
-          url(../images/images_adaptive/header_img_desk_ret.jpg);
+          url(../images/images_adaptive/header_img_desk_ret2x.jpg);
       }
     }
   }
